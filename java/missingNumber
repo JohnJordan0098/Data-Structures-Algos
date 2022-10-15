@@ -1,0 +1,13 @@
+//missing number in an array
+class Solution {
+    int MissingNumber(int array[], int n) {
+        // Your Code Here
+        int asum = n*(n+1)/2;
+        int msum = 0;
+        for(int i=0;i<n-1;i++)
+        {
+            msum+=array[i];
+        }
+        return (asum-msum);
+    }
+}
